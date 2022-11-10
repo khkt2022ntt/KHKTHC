@@ -1,0 +1,38 @@
+ body {
+    font-family: Tahoma;
+    font-size: 13pt;
+    width: 1000px;
+    margin: 0px auto;
+}
+.intro-header {
+    background-color: #777777;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+  }
+.intro-header .site-heading .subheading
+.intro-header .page-heading .subheading {
+  font-size: 18px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0px 0 0 0;
+  padding: 0px;
+  text-align: justify;
+  text-indent: 30px;
+}
+#footer{
+    background: beige;
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+    clear: left;
+    line-height: 40px;
+}
