@@ -1,0 +1,134 @@
+body {
+    font-family: Tahoma;
+    font-size: 13pt;
+    width: 1000px;
+    margin: 0px auto;
+}
+#menu_top{
+    background: #313131;
+    height: 40px;
+}
+#banner {
+    background: red;
+    height: auto;
+    width: 1000px;
+}
+#main #left {
+    width: 700px;
+    float:left;
+    min-height: 400px;
+}
+#main #right{
+    width: 300px;
+    background: bisque;
+    float:right;
+    min-height: 400px;
+}
+#footer{
+    background: #000;
+    width: 1000px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    clear: left;
+    line-height: 60px;
+}
+#menu_top ul{
+    margin: 0px;
+    padding: 0px;
+}
+#menu_top ul li{
+    list-style: none;
+    float:left;
+    position: relative;
+}
+#menu_top ul li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    padding: 0px 20px 0px 20px;
+    border-right: 1px solid #ccc;
+}
+#menu_top ul li a.active{
+    background: #1948b5;
+}
+#menu_top ul li > .sub-menu{
+    display: none;
+    position: absolute;
+    background: #1948b5;
+    border-bottom: #194;
+    font: weight;;
+}
+#menu_top ul li:hover .sub-menu{
+    display: block;
+}
+#banner img{
+    width: 1000px;
+}
+#main #left ul{
+    margin: 0px;
+    padding: 0px;
+}
+#main #left ul li{
+    list-style: none;
+    clear: left;
+    border-bottom: 2px solid #ccc;
+    float: left;
+    margin-bottom: 20px;
+}
+#main #left ul li img{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+#main #left ul li h2{
+    font-size: 14px;
+    margin-top: 0px;
+    float: left;
+}
+#main {
+    margin-top: 10px;
+}
+#main #right .menu_right ul{
+    margin: -15px 0px 0px 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+}
+#main #right .menu_right ul li{
+    list-style: none;
+}
+#main #right .menu_right ul li a{
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    height: 40PX;
+    border-bottom: 1px solid #ccc;
+    background: url(../images/iconcheck.png) no-repeat 3px;
+    text-indent: 33px;
+    color: #000;
+    font-size: 16PX;
+    display: block;
+}
+#main #right .menu_right ul li a:hover{
+    color: purple;
+}
+#main #right .menu_right h3 {
+    background: #194 url(../images/iconmenu.png) no-repeat 3px;
+    height: 40px;
+    margin-top: 0px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #FFF;
+    text-indent: 35px;
+}
+#footer{
+    background: beige;
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+    clear: left;
+    line-height: 40px;
+}

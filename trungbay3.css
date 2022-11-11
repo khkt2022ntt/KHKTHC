@@ -1,0 +1,84 @@
+body {
+    font-family: Tahoma;
+    font-size: 13pt;
+    width: 1000px;
+    margin: 0px auto;
+}
+#banner img{
+  width: 1000px;
+}
+.intro-header {
+    background-color: #777777;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+  }
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading {
+  font-size: 18px;
+  line-height: 1.1;
+  display: block;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0px 0 0 0;
+  padding: 0px;
+  text-align: justify;
+  text-indent: 30px;
+}
+
+/* tạo slide show */
+#slideshow {
+  overflow: hidden;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+}
+.slide-wrapper {
+  width: auto;
+ -webkit-animation: slide 14s ease infinite;
+}
+.slide {
+  float: left;
+  height: auto;
+  width: auto;
+  padding: 2%;
+  text-align: center;
+}
+/* tạo hiệu ứng chuyển động fade */
+.fade {  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  80% {margin-left: -1456px;}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#footer{
+    background: beige;
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+    clear: left;
+    line-height: 40px;
+}
