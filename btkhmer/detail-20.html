@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo tàng Khmer - Trà Vinh</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/css/bootstrap-grid.min.css"
+        integrity="sha512-QWjMsIpO5eW4+c4ASTEaZ4+eZNZ4YTtSDiu167Rq1Eqw//WlO+rXo4OvZMpyW/ykbN5LFeXmN6N416OzmWo7fA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/details.css">
+<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=RPsnX7GzToPpzQq13H6owpeNlarAZNpWX1OQG9rvLtHvreoA4l0ZVFNfy5NNzosuysBnTww945U-_CISgdmkZf29jM8SkxirniCxbqv8WfQ" charset="UTF-8"></script></head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div>
+                        <a href="index.html"><img class="logo" src="assets/img/logo.png"></a>
+                    </div>
+                    <div>
+                        <h2>Bảo Tàng Văn Hóa Dân Tộc Khmer</h2>
+                    </div>
+                </div>
+                <div class="search-wrapper active">
+                    <!-- <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm" />
+                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                              <img src="assets/img/chimthan5.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/Chimthan1.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/chimthan3.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/chimthan2.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/chimthan4.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/chimthan5.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/Chimthan1.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                              <img src="assets/img/chimthan3.jpg" />
+                          </li>
+                          <li class="swiper-slide">
+                            <img src="assets/img/chimthan2.jpg" />
+                           </li>
+                           <li class="swiper-slide">
+                            <img src="assets/img/chimthan4.jpg" />
+                           </li>
+                        </ul>
+                        
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination">
+
+                        </div>
+                    </div>
+                    
+                </div>
+                    <div class="col-md-6 col-12">
+                        <div style="margin-top: 25px; line-height: 40px;" id="article-detail">
+                            <h2 id="article-name">CHIM THẦN GARUDA</h2>
+                            <p><span style="font-weight: bold; color: #2C2C2C;">Chất liệu: </span><span id="article-material" style="color: #2C2C2C;">Gỗ</span></p>
+                            <hr>
+                            <p><span style="font-weight: bold; color: #2C2C2C">Kích thước: </span><span id="article-size" style="color: #2C2C2C;">Cao 32 cm, ngang 14 cm</span></p>
+                            <hr>
+                            <p><span style="font-weight: bold; color: #2C2C2C">Niên đại: </span><span id="article-chronology" style="color: #2C2C2C;">Thế kỷ XX</span>
+                            </p>
+                            <hr>
+                            <p><span style="font-weight: bold; color: #2C2C2C">Nơi phát hiện: </span><span id="article-place" style="color: #2C2C2C;">Chùa Âng (Angkorajapuri), khóm 4, phường 8, thành phố Trà Vinh, tỉnh Trà Vinh</span></p>
+                            <hr>
+                            <p><span style="font-weight: bold; color: #2C2C2C">Thuyết minh: </span><span id="article-place" style="color: #2C2C2C;"></span></p>
+                            <div class="player" style="display: flex;
+                            flex-direction: row;
+                            align-items: center;    border: 1px solid #A8A8A8;
+                            border-radius: 5px;
+                            padding: 5px 10px;">
+                                <div class="controls">
+                                    <button id="play" class="button__play">
+                                        <span class="button__play-iconplay" style="display: none;"></span>
+                                        <span class="button__play-iconpause" style="display: inline;"></span>
+                                    </button>
+                                </div>
+                                <div id="wavesurfer" class="wavesurfer__elem"><wave style="display: block; position: relative; user-select: none; height: 50px; overflow: hidden;"><canvas width="632" height="75" style="position: absolute; z-index: 1; left: 0px; top: 0px; bottom: 0px; width: 421px;"></canvas><wave style="position: absolute; z-index: 2; left: 0px; top: 0px; bottom: 0px; overflow: hidden; width: 375.333px; display: block; box-sizing: border-box; border-right: 0px solid rgb(51, 51, 51);"><canvas width="632" height="75" style="width: 421px;"></canvas></wave></wave></div>
+                            </div>
+    
+                            <span onclick="showPopup(this)" data-id="{{ item.data.attr.tour_gian_hang.link_tour_3d | getAttribute(language)}}" class="btn btn-default" style="float: left; padding: 5px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Xem
+                                hiện
+                                vật 3D </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="description">
+                    <h2><span style="font-weight: bold;">Thông tin hiện vật </span></h2>
+                    <hr>
+                    <p id="article-description">Chim thần Garuda là vua của các loài chim có nguồn gốc từ Bà La Môn giáo, Garuda sở hữu sức mạnh bất diệt và trở thành biểu tượng của lòng dũng cảm, sức mạnh. Trong Ấn Độ giáo Garuda là một vị thần, chúa tể của các loài chim và là vật cưỡi của thần Vishnu (thần bảo hộ). Trong Phật giáo, chim thần Garuda thường được trang trí trong kiến trúc ngôi chùa tạo sự uy nghi cho ngôi chùa, đồng thời biểu tượng cho cái thiện. </p>
+                    <p> Tượng chim thần Garuda được chạm khắc ở mỗi gốc của ghế thuyết pháp với những đường nét hoa văn tinh xảo trong tư thế dang đôi cánh.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- <section class="main-content">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-12 col-12">
+                    <div id="write-comments" onclick="writeComments()"><img src="assets/img/icon/edit.svg"> <span>Gửi
+                            đánh giá</span></div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="comments" id="comments">
+
+            </div>
+        </div>
+    </section> -->
+    <section>
+        <div class="show-tour-3d">
+            <div id="tour3d-popup-wrapper" class="popup-container ">
+                <div class="popup-content">
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; top: 0; left: 0;">
+                        <span class="tour3d-close" onclick="hidePopup()">×</span>
+                    </div>
+                    <iframe id="link_tour_3d" src="https://sketchfab.com/models/6c3fea8939c8480290f6ad32fed87885/embed" style="width: 100%; height: 100%; border: none; "></iframe>
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; bottom: 0; left: 0;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <div class="show-writing-comment">
+            <div id="writing-comment-popup-wrapper" class="popup-container ">
+                <div class="popup-content">
+                    <div class="writing-comment-form">
+                        <form id="contact">
+                            <div class="writing-comment-form-header">
+                                <span><img src="assets/img/icon/edit.svg">Viết bình luận</span>
+                                <span class="writing-comment-close" onclick="hideWriteComments()">&times;</span>
+                            </div>
+
+                            <div class="writing-comment-form-main">
+                                <fieldset>
+                                    <h4>Đánh giá <span style="color: #8F0000;">*</span></h4>
+                                    <div class="feedback">
+                                        <div class="rating">
+                                            <input type="radio" checked name="rating" id="rating-5" value="5">
+                                            <label for="rating-5"></label>
+                                            <input type="radio" name="rating" id="rating-4" value="4">
+                                            <label for="rating-4"></label>
+                                            <input type="radio" name="rating" id="rating-3" value="3">
+                                            <label for="rating-3"></label>
+                                            <input type="radio" name="rating" id="rating-2" value="2">
+                                            <label for="rating-2"></label>
+                                            <input type="radio" name="rating" id="rating-1" value="1">
+                                            <label for="rating-1"></label>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <fieldset>
+                                    <h4>Họ tên <span style="color: #8F0000;">*</span></h4>
+                                    <input id="comments-name" placeholder="Nhập tên..." type="text" tabindex="1"
+                                        required autofocus>
+                                </fieldset>
+                                <fieldset>
+                                    <h4>Email <span style="color: #8F0000;">*</span></h4>
+                                    <input id="comments-email" placeholder="Nhập địa chỉ Email..." type="email"
+                                        tabindex="2" required>
+                                </fieldset>
+                                <fieldset>
+                                    <h4>Nội dung <span style="color: #8F0000;">*</span></h4>
+                                    <textarea id="comments-content" placeholder="Nhập bình luận..." tabindex="3"
+                                        required></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <button name="submit" type="submit" id="contact-submit"
+                                        data-submit="...Sending">Submit</button>
+                                </fieldset>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section>
+        <div class="col-md-6 col-12">
+            <div class="container" style="margin-top: 40px; margin-bottom: 2rem;">
+            <hr>
+            <p style="font-size: 20px; text-transform: uppercase; font-weight: bold; text-align:center;">Xem các hiện
+                vật
+                khác</p>
+            </div>
+        </div>
+        <div class="swiper mySwiper swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+            <div class="swiper-wrapper" id="article-slider" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-524.333px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" role="group" aria-label="7 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=25"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_03750_32cb078317.jpg"><p class="article-name-slider" style="">
+        BỘ NGẪU TƯỢNG LINGA - YONI</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Đá thủy tinh</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ thứ V - VI sau công nguyên</p></a> </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="7" role="group" aria-label="8 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=64"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_03852_9aedb35e02.jpg"><p class="article-name-slider" style="">
+        TƯỢNG BỒ TÁT MAITREYA </p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Đầu thế kỷ XIX</p></a> </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="8" role="group" aria-label="9 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=67"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_05046_c6eb98de7a.jpg"><p class="article-name-slider" style="">
+        Đầu rồng</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Đầu thế kỷ XIX</p></a> </div><div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" aria-label="1 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=19"> <img width="100%" src="https://datatour.isys.vn/uploads/0001_1_2_jpg_2b68596830.jpg"><p class="article-name-slider" style="">
+        MẶT NẠ THẦN KHỈ HANUMAN</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+         Giấy</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Cuối thế kỷ XX</p></a> </div><div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=20"> <img width="100%" src="https://datatour.isys.vn/uploads/0095_27_1_jpg_04489978d1.jpg"><p class="article-name-slider" style="">
+        CHIM THẦN GARUDA</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ XX</p></a> </div><div class="swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=21"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_04082_c0a0aeffb8.jpg"><p class="article-name-slider" style="">
+        BỆ TƯỢNG PHẬT THÍCH CA</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ XIX</p></a> </div><div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=22"> <img width="100%" src="https://datatour.isys.vn/uploads/0065_18_1_jpg_7a61d1aea3.jpg"><p class="article-name-slider" style="">
+        CHÂN TRỤC SE CHỈ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ XX</p></a> </div><div class="swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=23"> <img width="100%" src="https://datatour.isys.vn/uploads/0005_2_1_jpg_eecdffdda7.jpg"><p class="article-name-slider" style="">
+        MẶT NẠ CHẰN KRÔNG RIÊP</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Giấy</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Năm 1988</p></a> </div><div class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=24"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_03516_80ada70922.jpg"><p class="article-name-slider" style="">
+        TƯỢNG BỒ TÁT MAITREYA</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Mộc</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Đầu thế kỷ XIX</p></a> </div><div class="swiper-slide" data-swiper-slide-index="6" role="group" aria-label="7 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=25"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_03750_32cb078317.jpg"><p class="article-name-slider" style="">
+        BỘ NGẪU TƯỢNG LINGA - YONI</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Đá thủy tinh</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ thứ V - VI sau công nguyên</p></a> </div><div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="7" role="group" aria-label="8 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=64"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_03852_9aedb35e02.jpg"><p class="article-name-slider" style="">
+        TƯỢNG BỒ TÁT MAITREYA </p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Đầu thế kỷ XIX</p></a> </div><div class="swiper-slide swiper-slide-active" data-swiper-slide-index="8" role="group" aria-label="9 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=67"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_05046_c6eb98de7a.jpg"><p class="article-name-slider" style="">
+        Đầu rồng</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Đầu thế kỷ XIX</p></a> </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=19"> <img width="100%" src="https://datatour.isys.vn/uploads/0001_1_2_jpg_2b68596830.jpg"><p class="article-name-slider" style="">
+        MẶT NẠ THẦN KHỈ HANUMAN</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+         Giấy</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Cuối thế kỷ XX</p></a> </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group" aria-label="2 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=20"> <img width="100%" src="https://datatour.isys.vn/uploads/0095_27_1_jpg_04489978d1.jpg"><p class="article-name-slider" style="">
+        CHIM THẦN GARUDA</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ XX</p></a> </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group" aria-label="3 / 9" style="width: 17.6667px; margin-right: 30px;"><a href="detail.html?id=21"> <img width="100%" src="https://datatour.isys.vn/uploads/DSC_04082_c0a0aeffb8.jpg"><p class="article-name-slider" style="">
+        BỆ TƯỢNG PHẬT THÍCH CA</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Chất liệu: 
+        Gỗ</p>
+            <p style="font-weight: light; color: #666666; font-size: 15px; margin-top: 10px">Niên đại: 
+        Thế kỷ XIX</p></a> </div></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </section>
+    <!-- <section class="send-comment-success" id="send-comment-success">
+        <div class="alert-box">
+            <div class="alert alert-success">
+                <div class="alert-icon text-center">
+                    <i class="fa fa-check-square-o  fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="alert-message text-center">
+                    <strong>Thành công!</strong> Bình luận của bạn sẽ được xét duyệt
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="send-comment-danger" id="send-comment-danger">
+        <div class="alert-box">
+            <div class="alert alert-danger">
+                <div class="alert-icon text-center">
+                    <i class="fa fa-check-square-o  fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="alert-message text-center">
+                    <strong>Không thành công!</strong>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo-footer">
+                    <a href="index.html"> <img src="assets/img/logo.png"></a>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-12 description ">
+                                <img src="assets/img/icon/place.png"><span> 65 Lý Tự Trọng, P. Bến Nghé, Quận 1, Tp. Hồ
+                                    Chí
+                                    Minh</span>
+                            </div>
+                            <div class="col-12 description ">
+                                <img src="assets/img/icon/call.png"><span> 028.38.299.741</span>
+                            </div>
+                            <div class="col-12 description ">
+                                <img src="assets/img/icon/call.png"><span> 028.38.298.250</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row">
+                            <div class="col-12 description ">
+                                <img src="assets/img/icon/global.png"><span> https://hcmc-museum.edu.vn/</span>
+                            </div>
+                            <div class="col-12 description ">
+                                <img src="assets/img/icon/fb.png"><span> https://www.facebook.com/museumofhcmc/</span>
+                            </div>
+                            <div class="col-12 description ">
+                                <img src="assets/img/icon/mail.png"><span> baotangtphcm@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js"
+        integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.1.5/wavesurfer.min.js'></script>
+
+    <script src="assets/js/details.js"></script>
+</body>
+
+</html>
