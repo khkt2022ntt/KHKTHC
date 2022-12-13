@@ -3,7 +3,8 @@ var items = [
       type: "text",
       title: "TƯỢNG PHẬT THÍCH CA",
       picturePath: "assets/images/tuong_phat_thich_ca_giua.png",
-      description: "",
+      description: "diễn tả gì ở đây",
+      Audio: "audio/lehoi.mp3",
       position: {
         left: 300,
         top: 450

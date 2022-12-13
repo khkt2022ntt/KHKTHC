@@ -60,8 +60,8 @@
   z-index: 16;
   background-color: white;
   color: #1d2129;
-  min-width: 100px;
-  min-height: 60px;
+  min-width: auto;
+  min-height: auto;
   height: auto;
   display: none;
   text-align: center;
