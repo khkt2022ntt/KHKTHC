@@ -2,7 +2,7 @@ var items = [
     {
       type: "text",
       title: "BUDDHA STATUE (AVALOKITESVARA)",
-      picturePath: "image/tuongthanvishnu.jpg",
+      picturePath: "assets/images/tb1/tuongthanvishnu.jpg",
       description: "<b> Material: </b> Sandstone (Restorated item)",
       position: {
         left: 130,
@@ -12,7 +12,7 @@ var items = [
     {
       type: "text",
       title: "VISHNU STATUE",
-      picturePath: "image/tuongthanvishnu.png",
+      picturePath: "assets/images/tb1/tuongthanvishnu.jpg",
       description: "<b> Material: </b> Sandstone. <b> Dated: </b> 8th century.  <b> Origin: </b> Luu Cu II Hamlet, Luu Nghiep Anh Commune, Tra Cu District, Tra Vinh Province.",
       position: {
         left: 370,
@@ -22,7 +22,7 @@ var items = [
     {
       type: "text",
       title: "VISHNU STATUE",
-      picturePath: "image/vishnu.png",
+      picturePath: "assets/images/tb1/vishnu.png",
       description: "<b> Material: </b> Sandstone. <b> Dated: </b> 8th century.  <b> Origin: </b> Luu Cu II Hamlet, Luu Nghiep Anh Commune, Tra Cu District, Tra Vinh Province.",
       position: {
         left: 630,
