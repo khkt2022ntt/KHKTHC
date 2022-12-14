@@ -2,7 +2,7 @@ var items = [
     {
       type: "text",
       title: "រួប ព្រះពោធិសត្វ(អវលោកិតេស្វរៈ)",
-      picturePath: "image/tuongthanvishnu.jpg",
+      picturePath: "assets/images/tb1/tuongthanvishnu.jpg",
       description: "<b> វត្ថុធាតុ៖ </b> ថ្មភក់ (វត្ថុបុរាណធើ្វឡើងវិញ)",
       position: {
         left: 130,
@@ -12,7 +12,7 @@ var items = [
     {
       type: "text",
       title: "ព្រះវិស្ណុ",
-      picturePath: "image/tuongthanvishnu.png",
+      picturePath: "assets/images/tb1/tuongthanvishnu.jpg",
       description: "<b> វត្ថុធាតុ៖ </b> ថ្មភក់ <b> យុគសម័យ៖ </b> សតវត្សរ៍ទី៨  <b> ប្រភព៖ </b> ភូមិជំនិក ឃុំឡីវងីបអាញ់ ស្រុកត្រាគូ ខេត្តត្រាវិញ",
       position: {
         left: 370,
@@ -22,7 +22,7 @@ var items = [
     {
       type: "text",
       title: "ព្រះវិស្ណុ",
-      picturePath: "image/vishnu.png",
+      picturePath: "assets/images/tb1/vishnu.png",
       description: "<b> វត្ថុធាតុ៖ </b> ថ្មភក់ <b> យុគសម័យ៖ </b> សតវត្សរ៍ទី៨  <b> ប្រភព៖ </b> ភូមិជំនិក ឃុំឡីវងីបអាញ់ ស្រុកត្រាគូ ខេត្តត្រាវិញ",
       position: {
         left: 630,
