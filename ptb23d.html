@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Fullscreen Web Page</title>
+    <title>My Responsive Web Page</title>
     <style>
       /* CSS for iframe container */
       .iframe-container {
@@ -23,25 +23,22 @@
         left: 0;
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
     </style>
   </head>
   <body>
-    <button onclick="toggleFullscreen()">Toggle Fullscreen</button>
     <div class="iframe-container" id="iframe-container">
-      <iframe width="100%" height="100%" data-original-width="320" data-original-height="640" src="https://www.thinglink.com/view/scene/1667404543505203201" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+      <iframe width="640" height="320" data-original-width="640" data-original-height="320" src="https://www.thinglink.com/view/scene/1667404543505203201" type="text/html" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
     </div>
     <script>
-      function toggleFullscreen() {
-        var iframeContainer = document.getElementById("iframe-container");
-        if (!document.fullscreenElement) {
-          iframeContainer.requestFullscreen().catch(err => {
-            alert(`Error: ${err.message}`);
-          });
-        } else {
-          document.exitFullscreen();
-        }
+      var iframeContainer = document.getElementById("iframe-container");
+      var iframe = iframeContainer.querySelector("iframe");
+      function resizeIframe() {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
       }
+      iframe.onload = resizeIframe;
+      window.onresize = resizeIframe;
     </script>
   </body>
 </html>
