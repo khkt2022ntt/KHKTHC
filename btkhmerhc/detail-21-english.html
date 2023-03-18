@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>The Khmer Cultural Museum</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="ribbon">
+        <a href="index-english.html"><img class="logo" src="assets/img/logo.png"></a>
+        <h1>THE KHMER CULTURAL MUSEUM</h1>
+      </div>
+    </header>
+    <div class="column">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./assets/img/BETUONGPHAT/betuongphat4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/BETUONGPHAT/betuongphat2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/BETUONGPHAT/betuongphat3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/BETUONGPHAT/betuongphat1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/BETUONGPHAT/betuongphat5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/BETUONGPHAT/betuongphat6.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+      </div>
+    </div>
+    <div class="column">
+        <div style="margin-top: 25px; line-height: 40px;">
+            <h2 id="article-name" style="font-size: x-large;">THE PEDESTAL OF THE STATUE OF GAUTAMA BUDDHA </h2>
+            <p><span style="font-weight: bold; color: #2C2C2C;">Material: </span><span id="article-material" style="color: #2C2C2C;">Wood</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Dimensions: </span><span id="article-size" style="color: #2C2C2C;"> 36cm in height, 44cm in width</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Dated: </span><span id="article-chronology" style="color: #2C2C2C;">Late 19th century</span>
+            </p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Place of discovery: </span><span id="article-place" style="color: #2C2C2C;"> Bodhinaga Pagoda, Kim Cau hamlet, Kim Hoa commune, Cau Ngang district, Tra Vinh province</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Voice-over: </span><span id="article-place" style="color: #2C2C2C;"></span></p>
+            <div style="text-align: left; width:50px">
+                <audio controls>
+                    <source src="./audio/THE PEDESTAL OF THE STATUE OF GAUTAMA BUDDHA.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <span onclick="showPopup(this)" data-id="{{ item.data.attr.tour_gian_hang.link_tour_3d | getAttribute(language)}}" class="btn btn-default" style="float: left; padding: 5px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">View 3D artifacts </span>
+            <!--<button onclick="openPopup()">Hiển thị pop-up</button>
+            <button id="myBtn" style="float: left; padding: 8px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Mở cửa sổ pop-up</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Nội dung cửa sổ pop-up</p>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+    <section>
+        <div class="show-tour-3d">
+            <div id="tour3d-popup-wrapper" class="popup-container">
+                <div class="popup-content">
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; top: 0; left: 0;">
+                        <span class="tour3d-close" onclick="hidePopup()">×</span>
+                    </div>
+                    <iframe id="link_tour_3d" src="https://sketchfab.com/models/4efb9cb868ce40ff921a54cbc1478273/embed" style="width: 100%; height: 100%; border: none; "></iframe>
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; bottom: 0; left: 0;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <h2><span style="font-weight: bold; margin-left: 30px; font-size:x-large; text-transform : uppercase;">Artifact information:  </span></h2>
+        <p style="margin: 25px; font-size:large; text-indent: 30px; text-align:justify;">The pedestal of the statue is designed with four floors, which is the place where Gautama Buddha sits in a meditative position. The pedestal of the statue is carved with decorative motifs such as scrolled leaves, lotus petals, and grass patterns, combined with four-petal flowers painting. In front of the pedestal of the statue is a long two-layered brassiere with a wood-carving covering the bottom strip, with the upper layer of the pedestal of the statue covering down a triangle, touching 1/2 of a 4-petal flower. The long layer on the lower part of the brassiere is carved with scrolled leaves.</p>
+    </div>
+    <hr>
+    <p style="font-size: 30px; text-transform: uppercase; font-weight: bold; margin-left: 20px; font-size: x-large"> <br>Other artifacts</p>
+    <div class="masonry" style="margin-left: 20px; margin-right: 10px"> 
+    <div class="item">
+        <a href="detail-19-english.html">
+        <img src="assets/img/0001_1_2_jpg_2b68596830.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+        HANUMAN MONKEY GOD MASK</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+        Paper</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Date: 
+        </span>
+        <span style="font-weight: light;">
+        Late 20th century</span>
+        </p>
+        </a>
+    </div>
+    <div class="item">
+        <a href="detail-20-english.html">
+        <img src="./assets/img/0095_27_1_jpg_04489978d1.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            GARUDA STATUE</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material:
+        </span> <span style="font-weight: light;">
+        Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Dated: 
+        </span>
+        <span style="font-weight: light;">
+        20th century</span>
+        </p>
+        </a>
+    </div> <div class="item">
+        <a href="detail-21-english.html">
+        <img src="./assets/img/BETUONGPHAT/betuongphat4.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            THE PEDESTAL OF THE STATUE OF GAUTAMA BUDDHA </p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+        Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Dated: 
+        </span>
+        <span style="font-weight: light;">
+        19th century</span>
+        </p>
+        </a>
+    </div> <div class="item">
+        <a href="detail-22-english.html">
+        <img src="./assets/img/CHANTRUCSECHI/0065_18_1_jpg_8f6e4d8f20.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            TOOL'S LEGS USING TO SPIN YARN</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+        Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Dated 
+        </span>
+        <span style="font-weight: light;">
+        20th century</span>
+        </p>
+        </a>
+    </div> <div class="item">
+        <a href="detail-23-english.html">
+        <img src="./assets/img/MATNACHAN/matnachangkrongriep.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            KRONG- RIEP'S MASK </p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material:
+        </span> <span style="font-weight: light;">
+        Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d;">Dated:
+        </span>
+        <span style="font-weight: light;">
+        1988</span>
+        </p>
+        </a>
+    </div> <div class="item">
+        <a href="detail-24-english.html">
+        <img src="./assets/img/BOTATMAITREYA1/DSC_03516_3e6c3f7fd5.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            MAITREYA BODHISATTVA STATUE</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+            Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d; ">Date: 
+        </span>
+        <span style="font-weight: light;">
+        Early 19th century</span>
+        </p>
+        </a>
+    </div> <div class="item">
+        <a href="detail-25-english.html">
+        <img src="./assets/img/NGAUTUONG/DSC_03717_a44df6f132.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            THE LINGA - YONI IDOL SET</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+        Glass stone</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Dated: 
+        </span>
+        <span style="font-weight: light;">
+        5th - 6th centuries AD</span>
+        </p>
+        </a>
+    </div> <div class="item">
+        <a href="detail-64-english.html">
+        <img src="./assets/img/BOTATMAITREYA/DSC_03855_64248305ab.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            MAITREYA BODHISATTVA STATUE </p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+        Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Date:
+        </span>
+        <span style="font-weight: light;">
+        Early 19th century</span>
+        </p>
+        </a>
+    </div>
+    <div class="item">
+        <a href="detail-67-english.html">
+        <img src="./assets/img/DAURONG/DSC_05046_a18e40fcdf.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+            DRAGON HEAD</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Material: 
+        </span> <span style="font-weight: light;">
+        Wood</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Dated: 
+        </span>
+        <span style="font-weight: light;">
+        19th century</span>
+        </p>
+        </a>
+    </div></div></div>
+    <footer>
+      <div class="ribbon">
+        <a href="index-english.html"><img style="text-align: center;" class="logo" src="assets/img/logo.png"></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
