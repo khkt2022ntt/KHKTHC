@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>Bảo tàng văn hóa dân tộc Khmer</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="ribbon">
+        <a href="index.html"><img class="logo" src="assets/img/logo.png"></a>
+        <h1>BẢO TÀNG VĂN HÓA DÂN TỘC KHMER</h1>
+      </div>
+    </header>
+    <div class="column">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="assets/img/CHANTRUCSECHI/0065_18_1_jpg_8f6e4d8f20.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/CHANTRUCSECHI/0066_18_2_jpg_759517ae27.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/CHANTRUCSECHI/0067_18_3_jpg_c5dcc20d17.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/CHANTRUCSECHI/0068_18_4_jpg_f971c02899.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+    <div class="column">
+        <div style="margin-top: 25px; line-height: 40px;">
+            <h2 id="article-name" style="font-size: x-large;">CHÂN TRỤC SE CHỈ</h2>
+            <p><span style="font-weight: bold; color: #2C2C2C;">Chất liệu: </span><span id="article-material" style="color: #2C2C2C;">Gỗ</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Kích thước: </span><span id="article-size" style="color: #2C2C2C;"> Cao 22 cm</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Niên đại: </span><span id="article-chronology" style="color: #2C2C2C;">Thế kỷ XX</span>
+            </p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Nơi phát hiện: </span><span id="article-place" style="color: #2C2C2C;"> Chùa SamRonek, khóm 6, phường 8, thành phố Trà Vinh, tỉnh Trà Vinh</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Thuyết minh: </span><span id="article-place" style="color: #2C2C2C;"></span></p>
+            <div style="text-align: left; width:50px">
+                <audio controls>
+                    <source src="./audio/matnathankhihanumankhmer.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <span onclick="showPopup(this)" data-id="{{ item.data.attr.tour_gian_hang.link_tour_3d | getAttribute(language)}}" class="btn btn-default" style="float: left; padding: 5px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Xem
+                hiện
+                vật 3D </span>
+            <!--<button onclick="openPopup()">Hiển thị pop-up</button>
+            <button id="myBtn" style="float: left; padding: 8px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Mở cửa sổ pop-up</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Nội dung cửa sổ pop-up</p>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+    <section>
+        <div class="show-tour-3d">
+            <div id="tour3d-popup-wrapper" class="popup-container">
+                <div class="popup-content">
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; top: 0; left: 0;">
+                        <span class="tour3d-close" onclick="hidePopup()">×</span>
+                    </div>
+                    <iframe id="link_tour_3d" src="https://sketchfab.com/models/e29ff3474a0e41448e1247afaa0c4484/embed" style="width: 100%; height: 100%; border: none; "></iframe>
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; bottom: 0; left: 0;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <h2><span style="font-weight: bold; margin-left: 30px; font-size:x-large; text-transform : uppercase;">Thông tin hiện vật </span></h2>
+        <p style="margin: 25px; font-size:large; text-indent: 30px; text-align:justify;">Bức tượng được chạm khắc trong tư thế ngồi kiết già, tay phải đặt trên đùi phải, úp lòng bàn tay, tay trái đặt lên đùi trái, ngửa lòng bàn tay. Tượng Maitreya mặc bộ y phục kiểu giáp sắt của võ tướng với chiếc vương miện hình chóp nón 3 tầng chạm nổi các hoa văn rất tinh xảo. Ngoài ra trên áo, trên xăng-wa hình chữ X, trên cánh tay và chân đều chạm trổ dày đặc hoa văn với các vòng trang sức bằng vàng. Phần sau của bức tượng cũng được chạm hoa văn dày đặc như hoa sen và hoa lá cuộn, thể hiện sự tinh khiết của ngài ngự trên tòa sen.</p>
+    </div>
+    <hr>
+    <p style="font-size: 30px; text-transform: uppercase; font-weight: bold; margin-left: 20px; font-size: x-large"><br>Xem các hiện vật khác</p>
+    <div class="masonry" style="margin-left: 25px; margin-right: 10px"> 
+    <div class="item">
+        <a href="detail-19.html">
+        <img src="assets/img/0001_1_2_jpg_2b68596830.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+        MẶT NẠ THẦN KHỈ HANUMAN</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+        </span> <span style="font-weight: light;">
+        Giấy</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+        </span>
+        <span style="font-weight: light;">
+        Cuối thế kỷ XX</span>
+        </p>
+        </a>
+    </div>
+    <div class="item">
+    <a href="detail-20.html">
+    <img src="./assets/img/0095_27_1_jpg_04489978d1.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    CHIM THẦN GARUDA</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ XX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-21.html">
+    <img src="./assets/img/BETUONGPHAT/betuongphat4.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    BỆ TƯỢNG PHẬT THÍCH CA</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ XIX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-22.html">
+    <img src="./assets/img/CHANTRUCSECHI/0065_18_1_jpg_8f6e4d8f20.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    CHÂN TRỤC SE CHỈ</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ XX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-23.html">
+    <img src="./assets/img/MATNACHAN/matnachangkrongriep.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    MẶT NẠ CHẰN KRÔNG RIÊP</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Giấy</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d;">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Năm 1988</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-24.html">
+    <img src="./assets/img/BOTATMAITREYA1/DSC_03516_3e6c3f7fd5.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    TƯỢNG BỒ TÁT MAITREYA</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Mộc</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d; ">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Đầu thế kỷ XIX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-25.html">
+    <img src="./assets/img/NGAUTUONG/DSC_03717_a44df6f132.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    BỘ NGẪU TƯỢNG LINGA - YONI</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Đá thủy tinh</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ thứ V - VI sau công nguyên</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-64.html">
+    <img src="./assets/img/BOTATMAITREYA/DSC_03855_64248305ab.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    TƯỢNG BỒ TÁT MAITREYA </p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Đầu thế kỷ XIX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-67.html">
+    <img src="./assets/img/DAURONG/DSC_05046_a18e40fcdf.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    Đầu rồng</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Đầu thế kỷ XIX</span>
+    </p>
+    </a>
+</div></div> </div>
+    <footer>
+      <div class="ribbon">
+        <a href="index.html"><img style="text-align: center;" class="logo" src="assets/img/logo.png"></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

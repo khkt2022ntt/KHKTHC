@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>Bảo tàng văn hóa dân tộc Khmer</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="ribbon">
+        <a href="index.html"><img class="logo" src="assets/img/logo.png"></a>
+        <h1>BẢO TÀNG VĂN HÓA DÂN TỘC KHMER</h1>
+      </div>
+    </header>
+    <div class="column">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="assets/img/NGAUTUONG/DSC_03717_a44df6f132.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/NGAUTUONG/DSC_03730_ca74031e42.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/NGAUTUONG/DSC_03737_b3587fcbf0.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/NGAUTUONG/DSC_03750_0f4815d7dc.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="assets/img/NGAUTUONG/DSC_03761_b14454696a.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+    <div class="column">
+        <div style="margin-top: 25px; line-height: 40px;">
+            <h2 id="article-name;" style="font-size: x-large;">BỘ NGẪU TƯỢNG LINGA - YONI</h2>
+            <p><span style="font-weight: bold; color: #2C2C2C;">Chất liệu: </span><span id="article-material" style="color: #2C2C2C;">Đá thủy tinh</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Kích thước: </span><span id="article-size" style="color: #2C2C2C;"> Chiều cao: 2,1cm; Đường kính: 3,7 cm, Nặng: 150 gram</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Niên đại: </span><span id="article-chronology" style="color: #2C2C2C;">Thế kỷ thứ V - VI sau công nguyên</span>
+            </p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Nơi phát hiện: </span><span id="article-place" style="color: #2C2C2C;"> Bộ Linga - Yoni của Bảo tàng Tổng hợp Trà Vinh được các nhà khảo cổ học khai quật tháng 12 năm 1986 tại di chỉ khảo cổ học Lưu Cừ II, xã Lưu Nghiệp Anh, huyện Trà Cú, tỉnh Trà Vinh.</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Thuyết minh: </span><span id="article-place" style="color: #2C2C2C;"></span></p>
+            <div style="text-align: left; width:50px">
+                <audio controls>
+                    <source src="./audio/matnathankhihanumankhmer.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <span onclick="showPopup(this)" data-id="{{ item.data.attr.tour_gian_hang.link_tour_3d | getAttribute(language)}}" class="btn btn-default" style="float: left; padding: 5px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Xem
+                hiện
+                vật 3D </span>
+            <!--<button onclick="openPopup()">Hiển thị pop-up</button>
+            <button id="myBtn" style="float: left; padding: 8px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Mở cửa sổ pop-up</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Nội dung cửa sổ pop-up</p>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+    <section>
+        <div class="show-tour-3d">
+            <div id="tour3d-popup-wrapper" class="popup-container">
+                <div class="popup-content">
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; top: 0; left: 0;">
+                        <span class="tour3d-close" onclick="hidePopup()">×</span>
+                    </div>
+                    <iframe id="link_tour_3d" src="https://sketchfab.com/models/c5a56f9291eb42009534c355a9daf7f4/embed" style="width: 100%; height: 100%; border: none; "></iframe>
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; bottom: 0; left: 0;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <h2><span style="font-weight: bold; margin-left: 30px; font-size:x-large; text-transform : uppercase;">Thông tin hiện vật </span></h2>
+        <p style="margin: 25px; font-size:large; text-indent: 30px; text-align:justify;"> Công nhận: Là Bảo vật Quốc gia theo Quyết định số 2496/QĐ - TTg ngày 22/12/2016 của Thủ tướng Chính phủ.</p>
+        <p style="margin: 25px; margin-top:0px; font-size:large; text-indent: 30px; text-align:justify;"> Bộ ngẫu tượng Linga - Yoni được chế tác thủ công với chất liệu đá thủy tinh khá tinh xảo, sử dụng kỹ thuật ghè đẽo sau đó mới mài nhẵn bóng, tạo nên một biểu tượng linh vật thờ hoàn chỉnh. Đây là hiện vật độc bản đặc biệt qúy hiếm và có giá trị đặc biệt. Về lịch sử, góp phần minh chứng văn hóa Óc Eo ở Trà Vinh cũng như ở Nam Bộ; Về văn hóa góp phần minh chứng di tích Lưu Cừ II là Đền thần Shiva thuộc giai đoạn phát triển của văn hóa Óc có tính nghệ thuật cao; Về khoa học là tư liệu để nhiều nhà khoa học thuộc nhiều lĩnh vực khác nhau có thể nghiên cứu dưới nhiều góc độ riêng biệt hay liên ngành...
+            Hiện vật đã góp phần khẳng định một nền Văn hóa Óc Eo đã từng tồn tại và phát triển rực rỡ trên vùng đất Nam Bộ nói chung, vùng đất Trà Vinh nói riêng và cũng góp phần xác định sự tồn tại của vương quốc Phù Nam ở Nam Bộ nổi tiếng trên thế giới.
+            </p>
+    </div>
+    <hr>
+    <p style="font-size: 30px; text-transform: uppercase; font-weight: bold; margin-left: 20px; font-size: x-large"><br>Xem các hiện vật khác</p>
+    <div class="masonry" style="margin-left: 25px; margin-right: 10px"> 
+    <div class="item">
+        <a href="detail-19.html">
+        <img src="assets/img/0001_1_2_jpg_2b68596830.jpg">
+            <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+        MẶT NẠ THẦN KHỈ HANUMAN</p>
+        <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+            <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+        </span> <span style="font-weight: light;">
+        Giấy</span></p>
+        <br>
+        <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+            <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+        </span>
+        <span style="font-weight: light;">
+        Cuối thế kỷ XX</span>
+        </p>
+        </a>
+    </div>
+    <div class="item">
+    <a href="detail-20.html">
+    <img src="./assets/img/0095_27_1_jpg_04489978d1.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    CHIM THẦN GARUDA</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ XX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-21.html">
+    <img src="./assets/img/BETUONGPHAT/betuongphat4.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    BỆ TƯỢNG PHẬT THÍCH CA</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ XIX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-22.html">
+    <img src="./assets/img/CHANTRUCSECHI/0065_18_1_jpg_8f6e4d8f20.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    CHÂN TRỤC SE CHỈ</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ XX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-23.html">
+    <img src="./assets/img/MATNACHAN/matnachangkrongriep.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    MẶT NẠ CHẰN KRÔNG RIÊP</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Giấy</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d;">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Năm 1988</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-24.html">
+    <img src="./assets/img/BOTATMAITREYA1/DSC_03516_3e6c3f7fd5.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    TƯỢNG BỒ TÁT MAITREYA</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Mộc</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d; ">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Đầu thế kỷ XIX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-25.html">
+    <img src="./assets/img/NGAUTUONG/DSC_03717_a44df6f132.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    BỘ NGẪU TƯỢNG LINGA - YONI</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Đá thủy tinh</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Thế kỷ thứ V - VI sau công nguyên</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-64.html">
+    <img src="./assets/img/BOTATMAITREYA/DSC_03855_64248305ab.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    TƯỢNG BỒ TÁT MAITREYA </p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Đầu thế kỷ XIX</span>
+    </p>
+    </a>
+</div> <div class="item">
+    <a href="detail-67.html">
+    <img src="./assets/img/DAURONG/DSC_05046_a18e40fcdf.jpg">
+        <p style="font-family: Times New Roman; font-size: 32px; font-style: italic; font-weight:500; color: #000000; margin-top: 25px">
+    Đầu rồng</p>
+    <p style="color: #666666; font-size: 15px; margin-top: 20px; ">
+        <span style="font-weight: bold; color: #4d4d4d; ">Chất liệu: 
+    </span> <span style="font-weight: light;">
+    Gỗ</span></p>
+    <br>
+    <p style="color: #666666; font-size: 15px; margin-top: 10px;">
+        <span style="font-weight: bold; color: #4d4d4d">Niên đại: 
+    </span>
+    <span style="font-weight: light;">
+    Đầu thế kỷ XIX</span>
+    </p>
+    </a>
+</div></div> </div>
+    <footer>
+      <div class="ribbon">
+        <a href="index.html"><img style="text-align: center;" class="logo" src="assets/img/logo.png"></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
