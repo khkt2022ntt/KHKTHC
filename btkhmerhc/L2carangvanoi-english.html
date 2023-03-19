@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/img/logo.png">
+    <title>The Museums Of The Khmer Peoples
+    </title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="ribbon">
+        <a href="index-english.html"><img class="logo" src="assets/img/logo.png"></a>
+        <h1 style="color: crimson;">THE MUSEUMS OF THE KHMER PEOPLES</h1>
+      </div>
+    </header>
+    <div class="column">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./assets/img/kebepvanoi1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/kebepvanoi2.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="./assets/img/kebepvanoi3.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="column">
+        <div style="margin-top: 25px; line-height: 40px;">
+            <h2 id="article-name" style="font-size: x-large;">KITCHEN CA RANG</h2>
+            <p><span style="font-weight: bold; color: #2C2C2C">Material: </span><span id="article-chronology" style="color: #2C2C2C;">Ceramics</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Dated: </span><span id="article-chronology" style="color: #2C2C2C;">Mid-20th century</span></p>
+            <hr>
+            <h2 id="article-name" style="font-size: x-large;">POT</h2>
+            <p><span style="font-weight: bold; color: #2C2C2C">Material: </span><span id="article-chronology" style="color: #2C2C2C;">Copper</span></p>
+            <hr>
+            <p><span style="font-weight: bold; color: #2C2C2C">Dated: </span><span id="article-chronology" style="color: #2C2C2C;">Mid-20th century</span></p>
+            <hr>
+            <!--<p><span style="font-weight: bold; color: #2C2C2C">Thuyết minh: </span><span id="article-place" style="color: #2C2C2C;"></span></p>
+            <div style="text-align: left; width:50px">
+                <audio controls>
+                    <source src="./audio/MẶT NẠ THẦN KHỈ HANUMAN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>-->
+            <span onclick="showPopup(this)" data-id="{{ item.data.attr.tour_gian_hang.link_tour_3d | getAttribute(language)}}" class="btn btn-default" style="float: left; padding: 5px 20px; background-color: #D86419; margin-top: 20px; color: #fff; border-radius: 5px;">View 3D artifacts</span>
+            <!--<button onclick="openPopup()">Hiển thị pop-up</button>
+            <button id="myBtn" style="float: left; padding: 8px 20px; background-color: #D86419; margin-top: 40px; color: #fff; border-radius: 5px;">Mở cửa sổ pop-up</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Nội dung cửa sổ pop-up</p>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+    <section>
+        <div class="show-tour-3d">
+            <div id="tour3d-popup-wrapper" class="popup-container">
+                <div class="popup-content">
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; top: 0; left: 0;">
+                        <span class="tour3d-close" onclick="hidePopup()">×</span>
+                    </div>
+                    <iframe id="link_tour_3d" src="https://sketchfab.com/models/5315feb7acb9487d933a952793a11dbf/embed" style="width: 100%; height: 100%; border: none; "></iframe>
+                    <div style="width: 100%; height: 50px; background-color: #000; position: absolute; bottom: 0; left: 0;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<div>
+        <h2><span style="font-weight: bold; margin-left: 30px; font-size:x-large; text-transform : uppercase;">Thông tin hiện vật </span></h2>
+        <p style="margin: 25px; font-size:large; text-indent: 30px; text-align:justify;">Mặt nạ thần khỉ Hanuman được sử dụng cho nhân vật khỉ Hanuman trong nghệ thuật múa Rô băm của tích truyện Riêm Kê của dân tộc Khmer. Thần khỉ Hanuman là nhân vật có lòng trung thành, cương trực, có sức mạnh phi thường, giúp hoàng tử Pres-Riêm giải cứu nàng Sê-Đa từ vua chằn Krông-Riêp đã bắt về làm vợ ở trong thành Lăng-Ka.</p>
+    </div>-->
+    <hr>
+    <footer>
+      <div class="ribbon">
+        <a href="index-english.html"><img style="text-align: center;" class="logo" src="assets/img/logo.png"></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
