@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header, footer {
+	background-color: yellow;
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+header {
+	top: 0;
+}
+
+footer {
+	bottom: 0;
+}
+
+.ribbon {
+	display: inline-block;
+	padding: 10px;
+}
+
+img {
+	height: 50px;
+}
