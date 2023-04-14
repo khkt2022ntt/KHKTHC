@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Web Page</title>
+    <style>
+      /* CSS for iframe container */
+      .iframe-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: #000;
+      }
+
+      /* CSS for iframe */
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iframe-container" id="iframe-container">
+        <iframe width="640" height="320" data-original-width="640" data-original-height="320" src="https://www.thinglink.com/view/scene/1698978464570278692" type="text/html" style="border: none;" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
+    </div>
+    <script>
+      var iframeContainer = document.getElementById("iframe-container");
+      var iframe = iframeContainer.querySelector("iframe");
+      function resizeIframe() {
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
+      iframe.onload = resizeIframe;
+      window.onresize = resizeIframe;
+    </script>
+  </body>
+</html>
